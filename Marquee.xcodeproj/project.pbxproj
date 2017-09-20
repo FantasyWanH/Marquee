@@ -15,6 +15,9 @@
 		1547CAFD1F7246FB00725F81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1547CAFB1F7246FB00725F81 /* LaunchScreen.storyboard */; };
 		1547CB081F7246FC00725F81 /* MarqueeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547CB071F7246FC00725F81 /* MarqueeTests.m */; };
 		1547CB131F7246FC00725F81 /* MarqueeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547CB121F7246FC00725F81 /* MarqueeUITests.m */; };
+		1547CB221F72471B00725F81 /* MarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547CB211F72471B00725F81 /* MarqueeView.m */; };
+		1547CB291F72478600725F81 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547CB261F72478600725F81 /* UITableView+SDAutoTableViewCellHeight.m */; };
+		1547CB2A1F72478600725F81 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1547CB281F72478600725F81 /* UIView+SDAutoLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		1547CB0E1F7246FC00725F81 /* MarqueeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarqueeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1547CB121F7246FC00725F81 /* MarqueeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarqueeUITests.m; sourceTree = "<group>"; };
 		1547CB141F7246FC00725F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1547CB201F72471B00725F81 /* MarqueeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarqueeView.h; sourceTree = "<group>"; };
+		1547CB211F72471B00725F81 /* MarqueeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarqueeView.m; sourceTree = "<group>"; };
+		1547CB241F72478600725F81 /* SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAutoLayout.h; sourceTree = "<group>"; };
+		1547CB251F72478600725F81 /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
+		1547CB261F72478600725F81 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		1547CB271F72478600725F81 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
+		1547CB281F72478600725F81 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +111,13 @@
 		1547CAEC1F7246FB00725F81 /* Marquee */ = {
 			isa = PBXGroup;
 			children = (
+				1547CB231F72478600725F81 /* SDAutoLayout */,
 				1547CAF01F7246FB00725F81 /* AppDelegate.h */,
 				1547CAF11F7246FB00725F81 /* AppDelegate.m */,
 				1547CAF31F7246FB00725F81 /* ViewController.h */,
 				1547CAF41F7246FB00725F81 /* ViewController.m */,
+				1547CB201F72471B00725F81 /* MarqueeView.h */,
+				1547CB211F72471B00725F81 /* MarqueeView.m */,
 				1547CAF61F7246FB00725F81 /* Main.storyboard */,
 				1547CAF91F7246FB00725F81 /* Assets.xcassets */,
 				1547CAFB1F7246FB00725F81 /* LaunchScreen.storyboard */,
@@ -138,6 +151,18 @@
 				1547CB141F7246FC00725F81 /* Info.plist */,
 			);
 			path = MarqueeUITests;
+			sourceTree = "<group>";
+		};
+		1547CB231F72478600725F81 /* SDAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				1547CB241F72478600725F81 /* SDAutoLayout.h */,
+				1547CB251F72478600725F81 /* UITableView+SDAutoTableViewCellHeight.h */,
+				1547CB261F72478600725F81 /* UITableView+SDAutoTableViewCellHeight.m */,
+				1547CB271F72478600725F81 /* UIView+SDAutoLayout.h */,
+				1547CB281F72478600725F81 /* UIView+SDAutoLayout.m */,
+			);
+			path = SDAutoLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +303,10 @@
 			files = (
 				1547CAF51F7246FB00725F81 /* ViewController.m in Sources */,
 				1547CAF21F7246FB00725F81 /* AppDelegate.m in Sources */,
+				1547CB2A1F72478600725F81 /* UIView+SDAutoLayout.m in Sources */,
 				1547CAEF1F7246FB00725F81 /* main.m in Sources */,
+				1547CB221F72471B00725F81 /* MarqueeView.m in Sources */,
+				1547CB291F72478600725F81 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
